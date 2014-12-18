@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.12: http://docutils.sourceforge.net/" />
+<meta name="version" content="S5 1.1" />
+<title>Developing without a mouse</title>
+<meta name="author" content="Rongzhou Shen (rongzhou&#64;amazon.com)" />
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<script src="ui/orange-fire/slides.js" type="text/javascript"></script>
+<link rel="stylesheet" href="ui/orange-fire/slides.css"
+      type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/orange-fire/outline.css"
+      type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/orange-fire/print.css"
+      type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/orange-fire/opera.css"
+      type="text/css" media="projection" id="operaFix" />
+
+<style type="text/css">
+#currentSlide {display: none;}
+</style>
+</head>
+<body>
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header">
+
+</div>
+<div id="footer">
+<h1>Developing without a mouse</h1>
+
+</div>
+</div>
+<div class="presentation">
+<div class="slide" id="slide0">
+<h1 class="title">Developing without a mouse</h1>
+<h2 class="subtitle" id="power-of-the-commandline">Power of the commandline</h2>
+<table class="docinfo" frame="void" rules="none">
+<col class="docinfo-name" />
+<col class="docinfo-content" />
+<tbody valign="top">
+<tr><th class="docinfo-name">Author:</th>
+<td>Rongzhou Shen (<a class="reference external" href="mailto:rongzhou&#64;amazon.com">rongzhou&#64;amazon.com</a>)</td></tr>
+</tbody>
+</table>
+<!-- Definitions of interpreted text roles (classes) for S5/HTML data. -->
+<!-- This data file has been placed in the public domain. -->
+<!-- Colours
+======= -->
+<!-- Text Sizes
+========== -->
+<!-- Display in Slides (Presentation Mode) Only
+========================================== -->
+<!-- Display in Outline Mode Only
+============================ -->
+<!-- Display in Print Only
+===================== -->
+<!-- Display in Handout Mode Only
+============================ -->
+<!-- Incremental Display
+=================== -->
+
+</div>
+<div class="slide" id="purpose-of-this-talk">
+<h1>Purpose of This Talk</h1>
+<p>Is to</p>
+<ul class="incremental simple">
+<li>Share my experience of using the commandline and no mouse;</li>
+<li>Discuss what tools and configurations are useful for a developer.</li>
+</ul>
+<p>Is not to</p>
+<ul class="incremental simple">
+<li>Discuss developing without a rat!</li>
+<li>Advocate that you have to use only the keyboard and commandline;</li>
+<li>Start a war between GUI and commandline, or VIM and EMACS.</li>
+</ul>
+</div>
+<div class="slide" id="background">
+<h1>Background</h1>
+<p>Once upon a time (in 2004), as an undergraduate student, being very extreme,
+I buried (literally) my mouse under my feet.</p>
+<p>I did not have to use a mouse until I met:</p>
+<ul class="incremental simple">
+<li>DOTA</li>
+<li>Macbook Pro</li>
+<li>Company Policies</li>
+<li>A non computer science degree girlfriend (now my wife) who needs to use my computer</li>
+</ul>
+</div>
+<div class="slide" id="why-commandline">
+<h1>Why Commandline?</h1>
+<ul class="simple">
+<li>Mature</li>
+<li>Abundant tools</li>
+<li>Customizable</li>
+<li>Simple</li>
+<li>Fast! - 90% time kept fingers in the Home Row</li>
+</ul>
+</div>
+<div class="slide" id="life-of-a-developer">
+<h1>Life of a Developer</h1>
+<p>Life as a developer, especially a student developer, was very simple, I needed
+only a few things.</p>
+</div>
+<div class="slide" id="id1">
+<h1>Life of a Developer</h1>
+<div class="section" id="window-manager-awesome">
+<h2>Window Manager - Awesome</h2>
+<ul class="simple">
+<li>Cascading window manager - multiple auto-layout algorithms available;</li>
+<li>Highly configurable using Lua;</li>
+<li>Key bindings to switch between windows and even monitors;</li>
+<li>This was the one!</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id2">
+<h1>Life of a Developer</h1>
+<div class="section" id="id3">
+<h2>Window Manager - Awesome</h2>
+<img alt="awesome-pieno.png" class="align-center" src="awesome-pieno.png" style="height: 600px;" />
+</div>
+</div>
+<div class="slide" id="id4">
+<h1>Life of a Developer</h1>
+<div class="section" id="email-reader-mutt">
+<h2>Email reader - Mutt</h2>
+<blockquote>
+&quot;All mail clients suck. This one just sucks less.&quot; - Author of mutt, circa 1995</blockquote>
+<ul class="simple">
+<li>Homepage: <a class="reference external" href="http://www.mutt.org/">http://www.mutt.org/</a>;</li>
+<li>Supports POP3, IMAP, SMTP, SSL, TSL etc.;</li>
+<li>VIM-like key bindings, but can be configured;</li>
+<li>Highly customizable.</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id5">
+<h1>Life of a Developer</h1>
+<div class="section" id="manga">
+<h2>Manga</h2>
+<table border="1" class="borderless docutils">
+<colgroup>
+<col width="37%" />
+<col width="30%" />
+<col width="32%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><img alt="FullMetalAlchemist_resized.png" class="first last align-center" src="FullMetalAlchemist_resized.png" />
+</td>
+<td><img alt="BloodPlus_resized.png" class="first last align-center" src="BloodPlus_resized.png" />
+</td>
+<td><img alt="SilverSpoon_resized.png" class="first last align-center" src="SilverSpoon_resized.png" />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="slide" id="id6">
+<h1>Life of a Developer</h1>
+<div class="section" id="music-player-moc">
+<h2>Music player - MOC</h2>
+<ul class="simple">
+<li>Homepage: <a class="reference external" href="http://moc.daper.net/">http://moc.daper.net/</a></li>
+<li>Supports ID3 tags;</li>
+<li>Supports most music formats: MP3, OGG, FLAC etc. through JACK library;</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id7">
+<h1>Life of a Developer</h1>
+<div class="section" id="chat-client-irssi">
+<h2>Chat client - IRSSI</h2>
+<p>IRC and GTalk (Jabber) were the only two instant messaging tools I used.</p>
+<ul class="simple">
+<li>Homepage: <a class="reference external" href="http://irssi.org/">http://irssi.org/</a></li>
+<li>Auto logging</li>
+<li>Formats and themes</li>
+<li>Configurable key bindings</li>
+<li>Paste detection</li>
+<li>Perl scripting</li>
+<li>Irssi-proxy</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id8">
+<h1>Life of a Developer</h1>
+<div class="section" id="web-browser-firefox-vimperator">
+<h2>Web browser - Firefox + Vimperator</h2>
+</div>
+</div>
+<div class="slide" id="id9">
+<h1>Life of a Developer</h1>
+<div class="section" id="terminal-multiplexer-screen-tmux">
+<h2>Terminal Multiplexer - Screen/Tmux</h2>
+<p>Terminal multiplexer lets you switch easily between several programs in one terminal, detach them (
+they keep running in the background) and reattach them to a different terminal.</p>
+<ul class="simple">
+<li>Powerline status line library and Solarized color scheme supports tmux!</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id10">
+<h1>Life of a Developer</h1>
+<div class="section" id="developer-tools-vim">
+<h2>Developer tools - VIM</h2>
+<ul class="simple">
+<li>Syntax highlighting for all programming languages;</li>
+<li>Highly configurable;</li>
+<li>Supports multiple language bindings - Python, Perl, Ruby;</li>
+<li>Many plugins and colorschemes available;</li>
+<li>Fingers kept at home row;</li>
+<li>High learning curve.</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id11">
+<h1>Life of a Developer</h1>
+<div class="section" id="developer-tools-documentation">
+<h2>Developer Tools - Documentation</h2>
+<p>As a Pythoner and an academic, my documentation tools were straight forward:</p>
+<ul>
+<li><dl class="first docutils">
+<dt>reStructuredText - <a class="reference external" href="http://docutils.sourceforge.net/rst.html">http://docutils.sourceforge.net/rst.html</a></dt>
+<dd><ul class="first last simple">
+<li>Writes in human readable plain text format;</li>
+<li>Can produce multiple outputs - HTML, TeX, S5 slides etc.;</li>
+<li>Used in conjunction with Python and Sphinx to create API documentation and User Guides.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>LaTeX - <a class="reference external" href="http://www.latex-project.org/">http://www.latex-project.org/</a></dt>
+<dd><ul class="first last simple">
+<li>Full fledged document preparing system;</li>
+<li>Used widely in academia for producing research papers;</li>
+<li>Highly customizable and many plugins available.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id12">
+<h1>Life of a Developer</h1>
+<div class="section" id="developer-tools-utilities">
+<h2>Developer Tools - Utilities</h2>
+<ul class="simple">
+<li>Oh-my-zsh: ZSH configuration template with many useful plugins;</li>
+<li>Powerline: a configurable good-looking status line for ZSH, tmux, Vim and iPython;</li>
+<li>less (+source-highlight), cut, tr, sed, grep, sort, uniq, awk ...</li>
+<li>Imagemagick, Graphviz</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="my-ultimate-configuration">
+<h1>My Ultimate Configuration</h1>
+<ul>
+<li><p class="first">Window manager: Awesome</p>
+</li>
+<li><p class="first">Music player: MOC</p>
+</li>
+<li><p class="first">Email reader: Mutt</p>
+</li>
+<li><p class="first">Chat clients: Irssi and Freetalk</p>
+</li>
+<li><p class="first">Web browser: W3M and Firefox(+Vimperator)</p>
+</li>
+<li><dl class="first docutils">
+<dt>Developer tools: Vim (with powerline and solarized color scheme),</dt>
+<dd><p class="first last">reStructuredText, Latex</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="slide" id="conclusion">
+<h1>Conclusion</h1>
+<ul>
+<li><dl class="first docutils">
+<dt>Can you live a developer's life with a mouse? Yes and No.</dt>
+<dd><ul class="first last simple">
+<li>Yes because I did so for 4 years;</li>
+<li>No because you're not alone - customers use mouse!</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Not using a mouse can be painful at the beginning, but eventually increase</dt>
+<dd><p class="first last">productivity</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">Commandline is powerful!</p>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
