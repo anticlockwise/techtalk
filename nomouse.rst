@@ -110,12 +110,9 @@ Life of a Developer
 Manga
 ------
 
-.. class:: borderless
-
-    +-------------------------------------------+-----------------------------------+-------------------------------------+
-    | .. image:: FullMetalAlchemist_resized.png | .. image:: BloodPlus_resized.png  | .. image:: SilverSpoon_resized.png  |
-    |    :align: center                         |    :align: center                 |    :align: center                   |
-    +-------------------------------------------+-----------------------------------+-------------------------------------+
+.. image:: TechTalk.jpg
+   :height: 600px
+   :align: center
 
 Life of a Developer
 ====================
