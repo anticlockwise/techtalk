@@ -53,11 +53,22 @@ Why Commandline?
 * Simple
 * Fast! - 90% time kept fingers in the Home Row
 
+Why not Commandline?
+=====================
+
+* High learning curve
+* Too acient
+* Not intuitive
+
 Life of a Developer
 ====================
 
 Life as a developer, especially a student developer, was very simple, I needed
 only a few things.
+
+.. image:: baby.jpg
+   :height: 500px
+   :align: center
 
 Life of a Developer
 ====================
@@ -207,6 +218,5 @@ Conclusion
 * Can you live a developer's life with a mouse? Yes and No.
    * Yes because I did so for 4 years;
    * No because you're not alone - customers use mouse!
-* Not using a mouse can be painful at the beginning, but eventually increase
-   productivity
+* Not using a mouse can be painful at the beginning, but eventually increase productivity
 * Commandline is powerful!
