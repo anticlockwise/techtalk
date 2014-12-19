@@ -53,13 +53,6 @@ Why Commandline?
 * Simple
 * Fast! - 90% time kept fingers in the Home Row
 
-Why not Commandline?
-=====================
-
-* High learning curve
-* Too acient
-* Not intuitive
-
 Life of a Developer
 ====================
 
@@ -127,18 +120,11 @@ Music player - MOC
 Life of a Developer
 ====================
 
-Chat client - IRSSI
---------------------
+Chat client - Weechat + Bitlbee
+--------------------------------
 
-IRC and GTalk (Jabber) were the only two instant messaging tools I used.
-
-* Homepage: http://irssi.org/
-* Auto logging
-* Formats and themes
-* Configurable key bindings
-* Paste detection
-* Perl scripting
-* Irssi-proxy
+* Weechat:  A fast, light and extensible chat client
+* Bitlbee: BitlBee brings IM (instant messaging) to IRC clients. It's a great solution for people who have an IRC client running all the time and don't want to run an additional MSN/AIM/whatever client.
 
 Life of a Developer
 ====================
@@ -198,16 +184,12 @@ Developer Tools - Utilities
 * less (+source-highlight), cut, tr, sed, grep, sort, uniq, awk ...
 * Imagemagick, Graphviz
 
-My Ultimate Configuration
-==========================
+Why not Commandline?
+=====================
 
-* Window manager: Awesome
-* Music player: MOC
-* Email reader: Mutt
-* Chat clients: Irssi and Freetalk
-* Web browser: W3M and Firefox(+Vimperator)
-* Developer tools: Vim (with powerline and solarized color scheme),
-   reStructuredText, Latex
+* High learning curve
+* Too acient
+* Not intuitive
 
 Conclusion
 ===========
