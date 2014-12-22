@@ -33,7 +33,8 @@ Background
 ===========
 
 Once upon a time (in 2004), as an undergraduate student, being very extreme,
-I buried (literally) my mouse under my feet.
+I buried (literally) my mouse and trackpad under my feet. For more than four
+years, till the end of 2009, I did not have a mouse, nor a working trackpad.
 
 I did not have to use a mouse until I met:
 
@@ -57,11 +58,8 @@ Life of a Developer
 ====================
 
 Life as a developer, especially a student developer, was very simple, I needed
-only a few things.
-
-.. image:: baby.jpg
-   :height: 500px
-   :align: center
+only a few things: A nice window manager, a music player, an email reader, a
+chat client, a web browser, developer tools and manga.
 
 Life of a Developer
 ====================
@@ -96,16 +94,6 @@ Email reader - Mutt
 * Supports POP3, IMAP, SMTP, SSL, TSL etc.;
 * VIM-like key bindings, but can be configured;
 * Highly customizable.
-
-Life of a Developer
-====================
-
-Manga
-------
-
-.. image:: TechTalk.jpg
-   :height: 600px
-   :align: center
 
 Life of a Developer
 ====================
@@ -183,6 +171,19 @@ Developer Tools - Utilities
 * Powerline: a configurable good-looking status line for ZSH, tmux, Vim and iPython;
 * less (+source-highlight), cut, tr, sed, grep, sort, uniq, awk ...
 * Imagemagick, Graphviz
+
+
+Life of a Developer
+====================
+
+Manga
+------
+
+I read Manga simply using either a web browser or a commandline based image viewer such as "feh".
+
+.. image:: TechTalk.jpg
+   :height: 600px
+   :align: center
 
 Why not Commandline?
 =====================
