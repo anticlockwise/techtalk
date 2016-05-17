@@ -179,7 +179,7 @@ Life of a Developer
 Manga
 ------
 
-I read Manga simply using either a web browser or a commandline based image viewer such as "feh".
+**I read Manga simply using either a web browser or a commandline based image viewer such as "feh".**
 
 .. image:: TechTalk.jpg
    :height: 600px
